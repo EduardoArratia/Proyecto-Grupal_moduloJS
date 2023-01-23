@@ -100,6 +100,40 @@ function updateShoppingCartTotal() {
   shoppingCartTotal.innerHTML = `${total.toFixed(2)}€`;
 }
 
+
+function updateShoppingCartTotalIva() {
+  let total = 0 ;
+  let totaliva = 0 ;
+  const shoppingCartTotal = document.querySelector('.shoppingCartTotal');
+
+  const shoppingCartItems = document.querySelectorAll('.shoppingCartItem');
+
+  shoppingCartItems.forEach((shoppingCartItem) => {
+    const shoppingCartItemPriceElement = shoppingCartItem.querySelector(
+      '.shoppingCartItemPrice'
+    );
+    const shoppingCartItemPrice = Number(
+      shoppingCartItemPriceElement.textContent.replace('€', '')
+    );
+    const shoppingCartItemQuantityElement = shoppingCartItem.querySelector(
+      '.shoppingCartItemQuantity'
+    );
+    const shoppingCartItemQuantity = Number(
+      shoppingCartItemQuantityElement.value
+    );
+    total = total + shoppingCartItemPrice * shoppingCartItemQuantity;
+    totlaiva = total * 0.19; 
+  });
+  shoppingCartTotalIva.innerHTML = `${totaliva.toFixed(2)}€`;
+}
+
+
+
+
+
+
+
+
 function removeShoppingCartItem(event) {
   const buttonClicked = event.target;
   buttonClicked.closest('.shoppingCartItem').remove();
