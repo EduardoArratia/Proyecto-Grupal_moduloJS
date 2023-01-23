@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
         integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
-    <title>Tienda</title>
+     <title>Tienda</title>
 </head>
 
 <body>
@@ -18,10 +18,79 @@
             <span class="navbar-toggler-icon"></span>
         </button>
     </nav>
-    <header>
+    <header id="header" class="header">
+        <div class="row">
+        </div>
+        <div class="two columns u-pull-right">
+            <ul>
+                <li class="submenu">
+                    <img src="img/anadir-al-carrito.png" alt="Carrito" id="img-carrito">
+                    <div id="carrito">
+                        <table id="lista-carrito" class="u-full-width">
+                            <thead>
+                                <tr>
+
+                                    <section class="shopping-cart">
+                                        <div class="container">
+                                            <h1 class="text-center">CARRITO</h1>
+                                            <hr>
+                                            <div class="row">
+                                                <div class="col-6">
+                                                    <div class="shopping-cart-header">
+                                                        <h6>Producto</h6>
+                                                    </div>
+                                                </div>
+                                                <div class="col-2">
+                                                    <div class="shopping-cart-header">
+                                                        <h6 class="text-truncate">Precio</h6>
+                                                    </div>
+                                                </div>
+                                                <div class="col-4">
+                                                    <div class="shopping-cart-header">
+                                                        <h6>Cantidad</h6>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div class="shopping-cart-items shoppingCartItemsContainer">
+                                            </div>
+
+                                            <div class="row">
+                                                <div class="col-12">
+                                                    <div class="shopping-cart-total d-flex align-items-center">
+                                                        <p class="mb-0">Total</p>
+                                                        <p class="ml-4 mb-0 shoppingCartTotal">0€</p>
+                                                        <div class="toast ml-auto bg-info" role="alert" aria-live="assertive" aria-atomic="true" data-delay="2000">
+                                                            <div class="toast-header">
+                                                                <span>✅</span>
+                                                                <strong class="mr-auto ml-1 text-secondary">Elemento en el carrito</strong>
+                                                                <button type="button" class="ml-2 mb-1 close" data-dismiss="toast" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                                                            </div>
+                                                            <div class="toast-body text-white">
+                                                                Se aumentó correctamente la cantidad
+                                                            </div>
+                                                        </div>
+                                                        <button class="btn btn-success ml-auto comprarButton" type="button" data-toggle="modal" data-target="#comprarModal">Comprar</button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                </tr>
+                            </thead>
+                            <tbody></tbody>
+                        </table>
+
+                        </div>
+                </li>
+            </ul>
+            </div>
+        </div>
+    </div>
+        <h1 class="text-center">CACHUREANDO</h1>
         <div class="container">
-            <h1 class="text-center">CACHUREANDO</h1>
-            <hr>
+            
+            
         </div>
     </header>
     <!-- START SECTION STORE -->
@@ -38,7 +107,7 @@
                             <div class="item-details">
                                 <h6>Código:00001</h6>  
                                 <h5>Lorem ipsum dolor sit amet consectetur adipisicing elit. </h5>
-                                <h4 class="item-price">$ 8000</h4>
+                                <h4 class="item-price">8000</h4>
                                 <button class="item-button btn btn-primary addToCart">AÑADIR AL CARRITO</button>
                             </div>
                         </div>
@@ -52,7 +121,7 @@
                             <div class="item-details">
                                 <h6>Código:00002</h6>  
                                 <h5>Lorem ipsum dolor sit amet consectetur adipisicing elit. </h5>
-                                <h4 class="item-price">$15000</h4>
+                                <h4 class="item-price">15000</h4>
                                 <button class="item-button btn btn-primary addToCart">AÑADIR AL CARRITO</button>
                             </div>
                         </div>
@@ -68,7 +137,7 @@
                             <div class="item-details">
                                 <h6>Código:00003</h6>  
                                 <h5>Lorem ipsum dolor sit amet consectetur adipisicing elit. </h5>
-                                <h4 class="item-price">$9000</h4>
+                                <h4 class="item-price">9000</h4>
                                 <button class="item-button btn btn-primary addToCart">AÑADIR AL CARRITO</button>
                             
                             </div>
@@ -84,7 +153,7 @@
                             <div class="item-details">
                                 <h6>Código:00004</h6>  
                                 <h5>Lorem ipsum dolor sit amet consectetur adipisicing elit. </h5>
-                                <h4 class="item-price">$25000</h4>
+                                <h4 class="item-price">25000</h4>
                                 <button class="item-button btn btn-primary addToCart">AÑADIR AL CARRITO</button>
                             </div>
                         </div>
@@ -99,7 +168,7 @@
                             <div class="item-details">
                                 <h6>Código:00005</h6>  
                                 <h5>Lorem ipsum dolor sit amet consectetur adipisicing elit. </h5>
-                                <h4 class="item-price">$15000</h4>
+                                <h4 class="item-price">15000</h4>
                                 <button class="item-button btn btn-primary addToCart">AÑADIR AL CARRITO</button>
                             
                             </div>
@@ -113,7 +182,7 @@
                             <div class="item-details">
                                 <h6>Código:00006</h6>  
                                 <h5>Lorem ipsum dolor sit amet consectetur adipisicing elit. </h5>
-                                <h4 class="item-price">$150000</h4>
+                                <h4 class="item-price">150000</h4>
                                 <button class="item-button btn btn-primary addToCart">AÑADIR AL CARRITO</button>
                             
                             </div>
@@ -127,7 +196,7 @@
                             <div class="item-details">
                                 <h6>Código:00007</h6>  
                                 <h5>Lorem ipsum dolor sit amet consectetur adipisicing elit. </h5>
-                                <h4 class="item-price">$150000</h4>
+                                <h4 class="item-price">150000</h4>
                                 <button class="item-button btn btn-primary addToCart">AÑADIR AL CARRITO</button>
                             
                             </div>
@@ -142,7 +211,7 @@
                             <div class="item-details">
                                 <h6>Código:00008</h6>  
                                 <h5>Lorem ipsum dolor sit amet consectetur adipisicing elit. </h5>
-                                <h4 class="item-price">$5000</h4>
+                                <h4 class="item-price">5000</h4>
                                 <button class="item-button btn btn-primary addToCart">AÑADIR AL CARRITO</button>
                             
                             </div>
@@ -157,7 +226,7 @@
                             <div class="item-details">
                                 <h6>Código:00009</h6>  
                                 <h5>Lorem ipsum dolor sit amet consectetur adipisicing elit. </h5>
-                                <h4 class="item-price">$40000</h4>
+                                <h4 class="item-price">40000</h4>
                                 <button class="item-button btn btn-primary addToCart">AÑADIR AL CARRITO</button>
                             </div>
                         </div>
@@ -170,7 +239,7 @@
                             <div class="item-details">
                                 <h6>Código:00010</h6>  
                                 <h5>Lorem ipsum dolor sit amet consectetur adipisicing elit. </h5>
-                                <h4 class="item-price">$15000</h4>
+                                <h4 class="item-price">15000</h4>
                                 <button class="item-button btn btn-primary addToCart">AÑADIR AL CARRITO</button>
                             </div>
                         </div>
@@ -182,60 +251,7 @@
         </div>
     </section>
     <!-- END SECTION STORE -->
-    <!-- START SECTION SHOPPING CART -->
-    <section class="shopping-cart">
-        <div class="container">
-            <h1 class="text-center">CARRITO</h1>
-            <hr>
-            <div class="row">
-                <div class="col-6">
-                    <div class="shopping-cart-header">
-                        <h6>Producto</h6>
-                    </div>
-                </div>
-                <div class="col-2">
-                    <div class="shopping-cart-header">
-                        <h6 class="text-truncate">Precio</h6>
-                    </div>
-                </div>
-                <div class="col-4">
-                    <div class="shopping-cart-header">
-                        <h6>Cantidad</h6>
-                    </div>
-                </div>
-            </div>
-            <!-- ? START SHOPPING CART ITEMS -->
-            <div class="shopping-cart-items shoppingCartItemsContainer">
-            </div>
-            <!-- ? END SHOPPING CART ITEMS -->
-
-            <!-- START TOTAL -->
-            <div class="row">
-                <div class="col-12">
-                    <div class="shopping-cart-total d-flex align-items-center">
-                        <p class="mb-0">Total</p>
-                        <p class="ml-4 mb-0 shoppingCartTotal">0€</p>
-                        <div class="toast ml-auto bg-info" role="alert" aria-live="assertive" aria-atomic="true"
-                            data-delay="2000">
-                            <div class="toast-header">
-                                <span>✅</span>
-                                <strong class="mr-auto ml-1 text-secondary">Elemento en el carrito</strong>
-                                <button type="button" class="ml-2 mb-1 close" data-dismiss="toast" aria-label="Close">
-                                    <span aria-hidden="true">&times;</span>
-                                </button>
-                            </div>
-                            <div class="toast-body text-white">
-                                Se aumentó correctamente la cantidad
-                            </div>
-                        </div>
-                        <button class="btn btn-success ml-auto comprarButton" type="button" data-toggle="modal"
-                            data-target="#comprarModal">Comprar</button>
-                    </div>
-                </div>
-            </div>
-
-            <!-- END TOTAL -->
-
+ 
             <!-- START MODAL COMPRA -->
             <div class="modal fade" id="comprarModal" tabindex="-1" aria-labelledby="comprarModalLabel"
                 aria-hidden="true">
